@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock de Computadoras</title>
+</head>
+<body>
+    
+    <h1 class="titulo-stock">STOCK DE COMPUTADORAS DISPONIBLES</h1>
+
+    {% for x in computadoras %}
+        <p>{{x.nombre}}</p>
+        <br>
+        <p>{{x.precio}}</p>
+        <p>{{x.marca}}</p>
+        <p>{{x.almacenamiento}}</p>
+        <p>{{x.proveedor}}</p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>

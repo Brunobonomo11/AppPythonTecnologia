@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Computadora</title>
+</head>
+<body>
+
+    <h1>En esta sección podes agregar una computadora nueva al stock</h1>
+    
+    <form action="/nuevaComputadora/" method="POST"> {% csrf_token %}
+
+        <p> Nombre: <input type="text" name="nombre"> </p>
+        <p> Precio: <input type="number" name="precio"> </p>
+        <p> Marca: <input type="text" name="marca"> </p>
+        <p> Almacenamiento: <input type="text" name="almacenamiento"> </p>
+        <p> Proveedor: <input type="text" name="proveedor"> </p>
+
+        <input type="submit" value="Agregar">
+
+    </form>
+
+</body>
+</html>

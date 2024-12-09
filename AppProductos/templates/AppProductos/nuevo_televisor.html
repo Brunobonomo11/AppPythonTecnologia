@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Televisor</title>
+</head>
+<body>
+
+    <h1>En esta sección podes agregar un televisor nuevo al stock</h1>
+    
+    <form action="/nuevoTelevisor/" method="post"> {% csrf_token %}
+
+        <p> Nombre: <input type="text" name="nombre"> </p>
+        <p> Precio: <input type="number" name="precio"> </p>
+        <p> Marca: <input type="text" name="marca"> </p>
+        <p> Pulgadas: <input type="number" name="pulgadas"> </p>
+        <p> Proveedor: <input type="text" name="proveedor"> </p>
+
+        <input type="submit" value="Agregar">
+
+    </form>
+
+</body>
+</html>
